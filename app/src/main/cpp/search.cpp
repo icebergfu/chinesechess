@@ -376,7 +376,7 @@ int Search::searchMain2(int depth, int millis) {
     if (diff > millis) {
         STOP_SEARCH = true;
         //__android_log_print(ANDROID_LOG_VERBOSE, APPNAME, "depth %d end %d %d diff = %d TIMES IS UP\n", depth, (int)end.tv_sec, (int)end.tv_nsec, diff);
-        return 0;
+        return mvResult;;
     }
     //__android_log_print(ANDROID_LOG_VERBOSE, APPNAME, "depth %d end %d %d diff = %d\n", depth, (int)end.tv_sec, (int)end.tv_nsec, diff);
 

@@ -58,7 +58,7 @@ public:
         }
         pos->undoMakeMove();
         mvs.push_back(mv);
-        vls.push_back(mv == mvHash ? 0x7fffffff : historyTable[pos->historyIndex(mv)]);
+        vls.push_back(mv == m ? 0x7fffffff : historyTable[pos->historyIndex(mv)]);
       }
       shellSort(mvs, vls);
       singleReply = (mvs.size() == 1);
